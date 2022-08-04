@@ -1,17 +1,35 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Timenvisioning
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card>
+
+    <ion-card-header>
+        <ion-card-title class="ion-text-justify ion-text-wrap"><h1>Ponta Grossa</h1>
+          <ion-badge slot="end"> <h2>14c°</h2> </ion-badge>
+        </ion-card-title>
+      <ion-card-subtitle>Paraná, Brasil</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item lines="full">
+        <ion-label slot="start"><strong> Data: </strong> XX/XX/XX </ion-label>
+        <ion-label> Min|Máx </ion-label>
+        <ion-label slot="end">
+          <div>
+            <p>Previsão</p>
+            <ion-icon name="thunderstorm-outline"></ion-icon>
+          </div>
+        </ion-label>
+      </ion-item>
+    </ion-card-content>
+
+  </ion-card>
+
 </ion-content>
